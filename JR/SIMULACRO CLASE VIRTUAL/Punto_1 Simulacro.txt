@@ -1,0 +1,73 @@
+# Se crea una lista para telefonos y otra para contactos, ambos con el mismo indice.
+
+contacts=[]
+phones=[]
+
+# Funcion para agregar un contacto ingresado por el usuario---------------------------------------------
+
+def apend(contact,phone):
+    name=str(input('Ingrese el nombre del usuario: '))
+    phone_=str(input('Ingrese el numero de Tel/Cel: '))
+    contact.append(name)
+    phone.append(phone_)   
+    
+# Funcion para ver toda la lista de contactos------------------------------------------------------------
+    
+def see(contact,phone):
+    if len(contact)>0:
+        print("\nEsta es su lista de contactos:")
+        for x in range(len(contact)):
+             print(f'{contact[x]}:{phone[x]}')
+    else: 
+        print('Aun no hay contactos')
+
+# Funcion para encontrar un contacto dentro de la lista, y mostrarlo en pantalla-------------------------  
+        
+def find(contact,phone):
+    if len(contact)==0:
+        print("Aun no hay contactos")
+    else:
+        name=input(str('Ingrese el nombre del contacto: '))
+        for x in range(len(contact)):
+          if contact[x]==name:
+             print(f"{contact[x]}:{phone[x]}")
+    
+
+# Funcion para eliminar un contacto-----------------------------------------------------------
+
+def delete(contact,phone):    
+    if len(contact)==0:
+        print("Aun no hay contactos")
+    else:
+        name=input(str('Ingrese el nombre del contacto: '))
+        for x in range(len(contact)):
+          if contact[x]==name:
+             contact.remove(contact[x])
+             phone.remove(phone[x])
+        else: print("El contacto no existe")
+    
+# Creacion de un menu:-------------------------------------------------------------------------
+
+def menu(): 
+ option=1
+ while (option != 5):
+    print("\n AGENDA DE CONTACTOS", " 1. Agregar contacto", " 2. Ver contactos"," 3. Buscar contacto"," 4. Eliminar contacto",
+          " 5. Salir" ,sep = "\n")
+    option=int(input("Que quieres hacer?: "))
+    if option==1:
+        apend(contacts,phones)
+    if option ==2:
+        see(contacts,phones)
+    if option ==3:
+        find(contacts,phones)
+    if option ==4:
+        delete(contacts,phones)        
+    if (option!=5) and (option>5):
+        print("La opcion ingresada no es valida, intentelo de nuevo")
+    if option==5:
+     print("El programa ha finalizado. Hasta pronto")
+     break
+        
+# Ejecutar el programa------------------------------------------------------------
+
+menu()

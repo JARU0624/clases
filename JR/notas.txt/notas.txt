@@ -1,0 +1,74 @@
+Bucle 
+Una funcion es la accion o el proceso que se debe realizar 
+Una funcion debe tener 3 partes importantes 
+
+return= es la  parte final de una funcion
+Una funcion si o si debe tener parentesis
+
+
+¿como se crea una funcion en pyhon
+siempre debe ir primero def seguido el nombre de la funcion pegada 
+con parentesis y se debe terminar en dos puntos
+siempre se debe iniciar con minusculas
+
+
+
+Consejos de como realizar la prueba las pruebas 
+
+
+Prueba 2
+
+Pago mensual
+Fiesta disco
+(Entre 18 y 30 años)
+
+Edades de sus amigos 
+ListaDeAmigos = [20,32,22,65,17]
+
+cover = 15000
+
+totalCover = amigoEntran * cover
+mostrar cover 
+
+Dentro de la discoteca
+
+Lista de licores []
+
+licor a tomar
+bucle o ciclo:
+
+
+Despues de la fiesta 
+taxi regreso a casa = (Float)
+
+saldoFinal = -gastoLicor - taxi
+
+Filtrar (siempre dependera de una condicional)
+
+prueba 3
+Laboratorio espcial
+
+4 tareas 
+
+1. listaEmpleados []
+importa si es ingeniero y +2
+ años de incorporacion
+
+suma el numero de ing
+
+2. 
+dineroRestante = presupuesto - gastos 
+
+3. 
+duracion = dias // cambiarlo a hora
+
+combustible = consumoHora * duracionEnDias
+
+4. 
+distancia = kilometros
+
+velPromedio = distancia / duracion 
+
+duracion mision = 3 dias 
+(2 horas) distancia
+duracion = 4 horas

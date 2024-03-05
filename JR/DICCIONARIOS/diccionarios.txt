@@ -1,0 +1,7 @@
+los diccionarikos siempre constan de ujn a clave y un  valor 
+y se encacillan en llaves{}
+
+la clave del diciionario es unica, no es una variable es un dato el cual se llama para accedee
+al valor.
+
+Dentro de los diccionario se puede meter cualquier tipo de dato 
